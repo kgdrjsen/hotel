@@ -1,12 +1,12 @@
 package com.android.kkkiosk
 
-open class Menu(idx : Int,name :String, explain : String) {
+open class Menu(name :String, explain : String) {
     var idx : Int
     var name : String
     var explain : String
 
     init {
-        this.idx = idx
+        this.idx = getNextIdx()
         this.name = name
         this.explain = explain
     }
@@ -14,4 +14,12 @@ open class Menu(idx : Int,name :String, explain : String) {
     open fun displayInfo() {
         println("ID : $idx, 이름 : $name, 설명 : [ $explain ]")
     }
+    companion object {
+        private var maxIdx = 1
+
+        private fun getNextIdx(): Int {
+            return maxIdx++
+        }
+    }
+
 }

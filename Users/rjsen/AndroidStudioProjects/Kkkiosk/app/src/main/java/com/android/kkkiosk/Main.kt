@@ -25,36 +25,36 @@ fun main () {
 }
 
 fun init() {
-    menus.add(Menu(1,"Bugers","앵거스 비프 통살을 다져만든 버거"))
-    menus.add(Menu(2,"Forzen Custard","매장에서 신선하게 만드는 아이스크림"))
-    menus.add(Menu(3,"Drinks","매장에서 직접 만드는 음료"))
-    menus.add(Menu(4,"Beer","뉴욕 브루클린 브루어리에서 양조한 맥주"))
-    menus.add(Menu(5,"Order","장바구니 확인 후 주문"))
-    menus.add(Menu(6,"Cancel","주문중인 주문을 취소"))
+    menus.add(Menu("Bugers","앵거스 비프 통살을 다져만든 버거"))
+    menus.add(Menu("Forzen Custard","매장에서 신선하게 만드는 아이스크림"))
+    menus.add(Menu("Drinks","매장에서 직접 만드는 음료"))
+    menus.add(Menu("Beer","뉴욕 브루클린 브루어리에서 양조한 맥주"))
+    menus.add(Menu("Order","장바구니 확인 후 주문"))
+    menus.add(Menu("Cancel","주문중인 주문을 취소"))
 
-    food.add(Food(1, "ShackBurger", "토마토, 양상추, 쉑소스가 토핑된 치즈버거", 6.9, "Bugers"))
-    food.add(Food(2, "SmokeBurger", "베이컨, 체리 페퍼에 쉑소스가 토핑된 치즈버거", 8.9, "Bugers"))
-    food.add(Food(3, "ShroomBurger", "몬스터 치즈와 체다 치즈로 속을 채운 베지테리안 버거", 9.4, "Bugers"))
-    food.add(Food(4, "CheeseBurger", "포테이토 번과 비프패티, 치즈가 토핑된 치즈버거", 6.9, "Bugers"))
-    food.add(Food(5, "Hamburger", "비프패티를 기반으로 야채가 들어간 기본버거", 5.4, "Bugers"))
+    food.add(Food( "ShackBurger", "토마토, 양상추, 쉑소스가 토핑된 치즈버거", 6900.0, "Bugers"))
+    food.add(Food( "SmokeBurger", "베이컨, 체리 페퍼에 쉑소스가 토핑된 치즈버거", 8900.0, "Bugers"))
+    food.add(Food( "ShroomBurger", "몬스터 치즈와 체다 치즈로 속을 채운 베지테리안 버거", 9400.0, "Bugers"))
+    food.add(Food( "CheeseBurger", "포테이토 번과 비프패티, 치즈가 토핑된 치즈버거", 6900.0, "Bugers"))
+    food.add(Food( "Hamburger", "비프패티를 기반으로 야채가 들어간 기본버거", 5400.0, "Bugers"))
 
-    food.add(Food(1,"Classic Shakes","쫀득하고 진한 커스타드가 들어간 클래식 쉐이크",5.9,"Forzen Custard"))
-    food.add(Food(2,"Floats","부드러운 바닐라 커스터드와 톡톡 터지는 탄산이 만나 탄생한 색다른 음료",5.9,"Forzen Custard"))
-    food.add(Food(3,"Cups","매일 점포에서 신선하게 제조하는 쫀득하고 진한 아이스크림",5.9,"Forzen Custard"))
+    food.add(Food("Classic Shakes","쫀득하고 진한 커스타드가 들어간 클래식 쉐이크",5900.0,"Forzen Custard"))
+    food.add(Food("Floats","부드러운 바닐라 커스터드와 톡톡 터지는 탄산이 만나 탄생한 색다른 음료",5900.0,"Forzen Custard"))
+    food.add(Food("Cups","매일 점포에서 신선하게 제조하는 쫀득하고 진한 아이스크림",5900.0,"Forzen Custard"))
 
-    food.add(Food(1,"Lemonade","매장에서 직접 만드는 상큼한 레몬에이드",4.5,"Drinks"))
-    food.add(Food(2,"Fresh Brewed Iced Tea","직접 유기농 홍차를 우려낸 아이스 티",3.9,"Drinks"))
-    food.add(Food(3,"Fifty/Fifty™ ","레몬에이드와 유기농 아이스 티가 만나 탄생한 시그니처 음료",4.4,"Drinks"))
-    food.add(Food(4,"Bottled Water","지리산 암반대수층으로 만든 생수",1.5,"Drinks"))
-    food.add(Food(5,"Fountain Soda","탄산음료",3.3,"Drinks"))
-    food.add(Food(5,"Abita Root Beer ","청량감 있는 독특한 미국식 무알콜 탄산음료",4.4,"Drinks"))
-    food.add(Food(5,"Hot Tea ","보성 유기농 찻잎을 우련낸 녹차,홍차,페퍼민트&레몬그라스",3.4,"Drinks"))
+    food.add(Food("Lemonade","매장에서 직접 만드는 상큼한 레몬에이드",4500.0,"Drinks"))
+    food.add(Food("Fresh Brewed Iced Tea","직접 유기농 홍차를 우려낸 아이스 티",3900.0,"Drinks"))
+    food.add(Food("Fifty/Fifty™ ","레몬에이드와 유기농 아이스 티가 만나 탄생한 시그니처 음료",4400.0,"Drinks"))
+    food.add(Food("Bottled Water","지리산 암반대수층으로 만든 생수",1500.0,"Drinks"))
+    food.add(Food("Fountain Soda","탄산음료",3300.0,"Drinks"))
+    food.add(Food("Abita Root Beer ","청량감 있는 독특한 미국식 무알콜 탄산음료",4400.0,"Drinks"))
+    food.add(Food("Hot Tea ","보성 유기농 찻잎을 우련낸 녹차,홍차,페퍼민트&레몬그라스",3400.0,"Drinks"))
 
-    food.add(Food(1,"Slow IPA ","The Hand and Malt",6.8,"Beer"))
-    food.add(Food(1,"Gorillager  ","Gorilla Brewing Co, Busan",6.8,"Beer"))
-    food.add(Food(1,"Shack Red™  ","진하고 스파이시한 레드 와인",29.9,"Beer"))
-    food.add(Food(1,"Shack White™ ","맑고 상큼한 화이트 와인",29.9,"Beer"))
-    food.add(Food(1,"ShackMeister™ Ale ","쉐이크쉑을 위해 핸드앤올트에서 특별히 양조한 에일 맥주",6.8,"Beer"))
+    food.add(Food("Slow IPA ","The Hand and Malt",6800.0,"Beer"))
+    food.add(Food("Gorillager  ","Gorilla Brewing Co, Busan",6800.0,"Beer"))
+    food.add(Food("Shack Red™  ","진하고 스파이시한 레드 와인",29900.0,"Beer"))
+    food.add(Food("Shack White™ ","맑고 상큼한 화이트 와인",29900.0,"Beer"))
+    food.add(Food("ShackMeister™ Ale ","쉐이크쉑을 위해 핸드앤올트에서 특별히 양조한 에일 맥주",6800.0,"Beer"))
 }
 
 fun getNumber () : Int {
@@ -94,7 +94,7 @@ fun selectMenu(i : Int) : Food? {
         when (categoryName) {
             "Order" -> {
                 var totalPrice = displayOrder(categoryName)
-                if (totalPrice < 0.0) {
+                if (totalPrice < 0) {
                     println("주문 내역이 없습니다.")
                     return null
                 }
@@ -106,13 +106,19 @@ fun selectMenu(i : Int) : Food? {
                             println("돈을 투입하시오")
                             var money = readLine()!!.toDouble()
 
-                            if (money >= totalPrice) {
+                            if (money == totalPrice) {
 
                                 orders.clear()
                                 println("결제를 완료했습니다")
+
+                            }else if (money > totalPrice) {
+                                println("결제를 완료했습니다")
+                                println("남은 금액은 ${money - totalPrice}원 입니다.")
+                                orders.clear()
                                 return null
-                            }else {
-                                println("현재 투입한 돈은 W ${money} 로 W ${totalPrice - money} 만큼 부족하여 주문할 수 없습니다.")
+                            }
+                            else {
+                                println("현재 투입한 돈은 ${money} 로  ${totalPrice - money}원 만큼 부족하여 주문할 수 없습니다.")
                             }
                             return null
                         }
