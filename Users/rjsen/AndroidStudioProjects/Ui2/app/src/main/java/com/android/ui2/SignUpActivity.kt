@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import androidx.constraintlayout.widget.ConstraintLayout
 
 class SignUpActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,7 +16,7 @@ class SignUpActivity : AppCompatActivity() {
         val et_name = findViewById<EditText>(R.id.et_upname)
         val et_id = findViewById<EditText>(R.id.et_upid)
         val et_pass = findViewById<EditText>(R.id.et_uppass)
-        val btn_ssign = findViewById<Button>(R.id.btn_ssin)
+        val btn_ssign = findViewById<ConstraintLayout>(R.id.btn_ssin)
 
 
 
@@ -24,15 +25,14 @@ class SignUpActivity : AppCompatActivity() {
             if (et_name.text.toString().trim().isEmpty() || et_id.text.toString().trim().isEmpty() || et_pass.text.toString().trim().isEmpty()){
 //            if (et_name.text.toString().equals("") || et_id.text.toString().equals("") || et_pass.text.toString().equals("")
 //            ) {
-                Toast.makeText(applicationContext, "입력되지 않은 정보가 있습니다.", Toast.LENGTH_SHORT)
-                    .show()
+                Toast.makeText(this,getString(R.string.toast_msg_join_err), Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
             } else {
-                Toast.makeText(applicationContext, "가입합니다.", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this,getString(R.string.toast_msg_join), Toast.LENGTH_SHORT).show()
                 val intent = Intent(this, SignInActivity::class.java).apply {
                     putExtra("et_id", et_id.text.toString())
                     putExtra("et_pass", et_pass.text.toString())
                 }
-
 
 //                val intent = Intent(this, SignInActivity::class.java)
 //                intent.putExtra("et_id", et_id.text.toString())
@@ -44,7 +44,7 @@ class SignUpActivity : AppCompatActivity() {
             }
 
         }
-        val btn_back = findViewById<Button>(R.id.btn_back)
+        val btn_back = findViewById<ConstraintLayout>(R.id.btn_back)
         btn_back.setOnClickListener {
             val intent2 = Intent(this, SignInActivity::class.java)
             startActivity(intent2)

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <string name="signIn_id">아이디</string>
+        <string name="signIn_pw">비밀번호</string>
+        <string name="signIn_id_et">아이디를 입력하세요</string>
+        <string name="signIn_pw_et">비밀번호를 입력하세요</string>
+        <string name="signIn_login">로그인</string>
+        <string name="signIn_join">회원가입</string>
+        <string name="home_age">나이 : 1</string>
+        <string name="home_kind">믹스견</string>
+        <string name="home_name">이    름 :</string>
+        <string name="signUp_name">이름</string>
+        <string name="signUp_name_et">이름을 입력하세요</string>
+        <string name="back">돌아가기</string>
+        <string name="toast_msg_noinput">입력되지 않은 정보가 있습니다.</string>
+        <string name="toast_msg_err">아이디와 비밀번호를 확인해주세요.</string>
+        <string name="toast_msg_join">가입합니다.</string>
+        <string name="toast_msg_exit">종료합니다.</string>
+        <string name="toast_msg_join_err">입력되지 않은 정보가 있습니다.</string>
+        <string name="toast_msg_login">로그인 합니다.</string>
+        <string name="home_exit">종료</string>
+        <string name="home_app_exit">앱 종료</string>
+        <string name="app_name">자기소개 앱</string>
+
+</resources>
